@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="style.css"/>
+        <title>SignIN</title>
+    </head>
+
+    <body  class="Log-container-one">
+      <div id="Log-one" > 
+        <div style=" position:absolute;top:65px;left:270px; color: white;font-family:Poppins">
+            <h1 style="padding-left:230px">Nouveau ici ?</h1>
+            <p style=" font-size:25px; position:relative; margin-top: 37px">
+                Say goodbye to the problems
+                you face in realizing  your own
+                project . 
+            </p>
+        </div>
+
+        <div style=" position:absolute;top:200px; color: white;font-family:Poppins;">
+            <h1 style="padding-left:250px;padding-right:100px;padding-top:50px;">Voulez vous nous rejoindre<br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspcomme :</h1>
+            <div style=" margin-left:700px; margin-top:-70px"> 
+                <button onclick="goTo()" style=" width: 180px;height: 50px;margin-left: 80px;margin-bottom: 20px; border-radius:10px;background-color:#1F8EAA; border-color:#1F8EAA ;color:white; " type="button">Startup</button>
+                <button onclick="goTo2()"  style="width: 180px;height: 50px;margin-left: 80px;border-radius:10px;background-color:#1F8EAA; border-color:#1F8EAA;color:white;" type="button">Company</button>
+        
+            </div>
+        </div>
+        
+        
+     </div>
+
+      <div id="Log-Startup">
+           <button onclick="goTo()"><img src="images/back.png" width="30px"  height="30px" ></button> ></button>
+           <h1 style="color:white; width: 500px;margin-left: 630px;">we need some informations </h1>
+           <h1 style="position :absolute;color:white; width: 500px;margin-left:230px; font-size:50px; margin-top:100px">Welcome</h1>
+           <h2  style="position :absolute;color:white; width: 500px;margin-left:210px; margin-top:200px">A problem for a solution <br>
+            and a solution for a problem</h2>
+           <form>
+              <input type="text" placeholder="Full Name " name="Name">
+              <input type="Email" placeholder="Email " name="Email">
+              <input type="password" placeholder="Password"  name="Password">
+              <input type="password" placeholder="Confirm your passwword " name="password">
+              <input type="text" placeholder="Identity confirmation " name="confirmation">
+              <button style=" width: 180px;height: 50px;margin-left: 30px;margin-bottom: 20px; border-radius:10px;background-color:#1F8EAA; border-color:#1F8EAA ;color:white; " type="button">sign in</button>
+             <div style="display:flex; width:400px">
+              <p style="color:white">Do you have an account ? </p>
+              <a  href="LogIn.html" style="color:white; margin-top: 20px; ">Log In</a>
+            </div>
+          </form>
+      </div>
+      
+
+      <div id="Log-Startup2">
+        <button onclick="goTo2()"><img src="images/back.png" width="30px"  height="30px" ></button> ></button>
+        <h1 style="color:white; width: 500px;margin-left: 630px;">we need some informations </h1>
+        <h1 style="position :absolute;color:white; width: 500px;margin-left:230px; font-size:50px; margin-top:100px">Welcome</h1>
+        <h2  style="position :absolute;color:white; width: 500px;margin-left:210px; margin-top:200px">A problem for a solution <br>
+         and a solution for a problem</h2>
+        <form>
+           <input type="text" placeholder="Full Name " name="Name">
+           <input type="Email" placeholder="Email " name="Email">
+           <input type="password" placeholder="Password"  name="Password">
+           <input type="password" placeholder="Confirm your passwword " name="password">
+           <input type="text" placeholder="Identity confirmation " name="confirmation">
+           <button style=" width: 180px;height: 50px;margin-left: 30px;margin-bottom: 20px; border-radius:10px;background-color:#1F8EAA; border-color:#1F8EAA ;color:white; " type="button">sign in</button>
+           <div style="display:flex; width:400px">
+            <p style="color:white">Do you have an account ? </p>
+            <a  href="LogIn.html" style="color:white; margin-top: 20px; ">Log In</a>
+          </div>
+       </form>
+   </div>
+
+    </body>
+    <script>
+               let divInfo= document.getElementById("Log-Startup")
+               let divInfo2= document.getElementById("Log-one")
+               let divInfo3= document.getElementById("Log-Startup2")
+                function goTo(){
+                    if (divInfo.style.display == 'none')
+                        { 
+                            divInfo.style.display = 'block';
+                            divInfo2.style.display = 'none'
+                        }
+                        else{
+                            divInfo.style.display = 'none';
+                            divInfo2.style.display = 'block'
+                        }
+
+                }
+
+
+                function goTo2(){
+                    if (divInfo3.style.display == 'none')
+                        { 
+                            divInfo3.style.display = 'block';
+                            divInfo2.style.display = 'none'
+                        }
+                        else{
+                            divInfo3.style.display = 'none';
+                            divInfo2.style.display = 'block'
+                        }
+                }
+    </script>
+
+
+</html>

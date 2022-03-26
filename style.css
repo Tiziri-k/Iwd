@@ -1,0 +1,176 @@
+*{
+    box-sizing: border-box;
+}
+body,html {margin: 0;}
+.Bg{
+ 
+     background: url("images/home.jpg");
+     background: url(images/home.jpg), linear-gradient(45deg, #1c2fd940, #2d38b71f);
+    background-blend-mode: overlay;
+    background-size: cover;
+
+}
+.nav::after{
+    position: fixed;
+    content: " ";
+    filter: blur(8px);
+    height:50px;
+
+ 
+}
+
+nav{
+ 
+    background: #0000001f;
+    backdrop-filter: blur(8px);
+    padding: 1em;
+    align-items: center;
+    top: 0;
+    display: flex;
+    position: fixed;
+    width: 100%;
+    
+   
+}
+
+nav a{
+    color: #FFFFFF;
+    font-family: "Source";  
+    font-size: 26px;
+    text-decoration: none;
+    padding-left:90px;
+
+}
+
+nav button{
+    border-radius: 50px;
+    border: 1px solid white;
+    width : 120px;
+    height :25px;
+    background-color: transparent;
+    color: white;
+    margin-left:  auto;
+    
+    
+}
+
+.container-one{
+    position: absolute;
+    left: 200px;
+    top: 200px;
+    color: white;
+    align-items: center;
+}
+.container-one h1{
+    
+   margin-left: 170px;
+   font-family:"Source";
+   display:flex;
+}
+
+.container-one p{
+    
+    margin-left: -100px;
+ }
+
+.container-one button{
+    
+    margin-left: 210px;
+    width: 351px;
+    height: 69px;
+    font-size: 25px;
+    color: white;
+    border: 1px solid transparent;
+    background-color: #2FA4FF;
+    opacity:61%;
+    border-radius:20px;
+    margin-top: 50px;
+}
+
+
+.container-two{
+    position: relative;
+    top: 600px;
+    width: 1153px;
+    height: 100%;
+    left: 0px;
+    background-color: #1A1B41;
+    
+}
+
+
+.container-two-one{
+     margin-top: -346px;
+     margin-left: 60px;
+
+     
+}
+div div img{
+    width:330px;
+    height:235px;
+}
+div div p{
+    margin:20px; 
+    color:white; 
+    font-size:15px ;
+    font-family:"Source"
+}
+
+.Log-container-one{
+    background: url(images/logIn.jpg), linear-gradient(261deg, #1c2fd9, #0c0d5fc9);
+    background-blend-mode: overlay;
+    background-size: cover;
+    backdrop-filter: blur(8px);
+
+}
+#Log-one{
+    display:block;  
+}
+
+#Log-Startup{
+    display:none;
+    height: 603px;
+    width: 300px;
+    top:100px
+
+}
+
+#Log-Startup2
+{
+    display:none;
+    height: 603px;
+}
+form{
+    margin-top: 50px;
+    margin-left: 700px;
+   
+ }
+
+ form input{
+    width: 260px;
+    height:50px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+ }
+
+
+
+.SignUp-container{
+      position:absolute;
+    background: url(images/logIn.jpg), linear-gradient(45deg, #1c2fd940, #2d38b71f);
+    background-blend-mode: overlay;
+    background-size: cover;
+    color: white;
+    backdrop-filter: blur(8px);
+    top:0;
+    left:0;
+ }
+
+ .SignUp-container div{
+    align-items: center;
+    margin-top: 0;
+    padding: 50px;
+    height: 1100px;
+    width: 100%;
+}
+
